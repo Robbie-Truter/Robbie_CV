@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body, html{
+	min-height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #d3d3d3;
+	font-family: "Open Sans", sans-serif;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.navbar-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 15px;
+	height: 105px;
+	width: 100%;
+	background-color: #048BC2;
+	box-shadow: -1px 3px 9px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-top h2,i{
+	color: aliceblue;
+}
+
+.navbar-top i{
+	margin-top:-20px;
+}
+
+.main-container{
+	display:flex;
+	/*flex-wrap: wrap;*/
+	gap: 30px;
+	/*justify-content: center;*/
+}
+
+.navbar-side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	/*height: 200%;*/
+	width: 350px;
+	padding: 10px;
+	background-color: #212834;
+	color: aliceblue;
+	/*box-shadow: 5px 0px 6px -1px rgba(0,0,0,0.69);*/
+}
+
+.cv-photo{
+	height: 150px;
+	margin-top: 20px;
+	border-radius: 12px;
+}
+
+.contact-info{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 300px;
+}
+
+.icons{
+	height: 30px;
+}
+
+.main-content{
+	padding: 20px;
+}
+
+.divider{
+	width: 300px;
+}
+
+.skill-list{
+	line-height: 40px;
+}
+
+.about-me-section,
+.education-section,
+.certification-section,
+.experience-section{
+	/*text-align: center;*/
+	line-height: 25px;
+	gap: 10px;
+	height: 200px;
+	width: 600px;
+	padding: 10px;
+	border: 3px solid aliceblue;
+	border-radius: 12px;
+	color: aliceblue;
+	background-color: #212834;
+	transition:  0.1s;
+}
+
+
+.about-me-section:hover,
+.education-section:hover,
+.certification-section:hover,
+.experience-section:hover {
+	background-color: #314154; 
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: #048BC2;
+}
+
+a:hover,li:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.company-logo{
+	height: 50px;
+	margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 1115px){
+	.navbar-side{
+		width: 250px;
+	}
+
+	.contact-info {
+  		flex-direction: column;
+	}
+
+	.divider{
+		width: 200px;
+	}
+}
+
+.test{
+	display: flex;
+}
+
+@media only screen and (max-width: 1622px){
+	.test{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.test h2{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 983px){
+	.main-container{
+		flex-direction: column;
+	}
+
+	.navbar-side{
+		width: 100%;
+	}
+
+	.about-me-section,
+	.education-section,
+	.certification-section,
+	.experience-section{
+		width: 500px;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 556px){
+	.about-me-section,
+	.education-section,
+	.certification-section,
+	.experience-section{
+		width: 300px;
+		overflow: auto;
+	}
+}
+
+@media only screen and (min-width: 1817px){
+	.main-container{
+		gap: 120px;
+	}
+}

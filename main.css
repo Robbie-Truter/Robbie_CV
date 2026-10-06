@@ -181,6 +181,21 @@ body, html {
 
 /* ── Skill Pills ──────────────────────────────── */
 
+.skill-category {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.skill-category-title {
+	font-size: 0.7rem;
+	font-weight: 600;
+	color: #60b8e0;
+	display: block;
+	margin-bottom: 6px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
 .skill-list {
 	list-style: none;
 	padding: 0;
@@ -210,6 +225,18 @@ body, html {
 	border-color: rgba(6, 160, 220, 0.45);
 	color: #8ad4f5;
 	transform: translateY(-1px);
+}
+
+.skill-list.ai-skills li {
+	background-color: rgba(168, 85, 247, 0.12);
+	border-color: rgba(168, 85, 247, 0.3);
+	color: #c084fc;
+}
+
+.skill-list.ai-skills li:hover {
+	background-color: rgba(168, 85, 247, 0.25);
+	border-color: rgba(168, 85, 247, 0.5);
+	color: #e9d5ff;
 }
 
 /* ── Main Content Area ────────────────────────── */
